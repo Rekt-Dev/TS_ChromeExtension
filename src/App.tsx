@@ -1,10 +1,18 @@
 import "./styles.css";
-
+import React, { useState } from react;
 export default function App() {
+  const [sum, setSum] = useState("0");
+
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some ... happen!</h2>
+      <h1>Counter</h1>
+      <button>+</button>
+      <button>-</button>
+      <button>^</button>
+      <br />
+      <br />
+
+      <div>{sum}</div>
     </div>
   );
 }
